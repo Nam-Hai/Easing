@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    width: 70rem;
+    margin: 10rem auto;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.easing-container {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.circle {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+}
+
+.easing-container .Y {
+    bottom: -2px;
+    left: -10px;
+}
+
+.easing-container .X {
+    bottom: calc(-10px);
+    left: -2px;
+    background: #000;
+}
+
+.easing-container .XY {
+    bottom: -2px;
+    left: -2px;
+}
+
+h2 {
+    position: absolute;
+    bottom: -30px;
+}
