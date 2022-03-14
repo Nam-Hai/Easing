@@ -13,7 +13,6 @@ let t = 0;
 let y = 0;
 
 let Ease = [
-    t => t,
     t => 1 - Math.cos(t * (.5 * Math.PI)),
     t => t * t,
     t => t * t * t,
