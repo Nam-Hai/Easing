@@ -9,12 +9,24 @@ main {
     display: flex;
     width: 70rem;
     height: 40rem;
-    margin: 10rem auto;
+    margin: 10rem auto 0;
 
     border-top: 0.5rem solid black;
     border-bottom: 0.5rem solid black;
     
     justify-content: space-between;
+}
+
+section {
+    width: 70rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3rem;
 }
 
 .easing-container {
