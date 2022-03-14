@@ -8,44 +8,25 @@
 main {
     display: flex;
     width: 70rem;
+    height: 40rem;
     margin: 10rem auto;
-    gap: 4rem;
-    flex-wrap: wrap;
+
+    border-top: 0.5rem solid black;
+    border-bottom: 0.5rem solid black;
+    
+    justify-content: space-between;
 }
 
 .easing-container {
+    width: 2rem;
+    height: 100%;
     position: relative;
-    width: 10rem;
-    height: 10rem;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
 }
 
 .circle {
-    height: 5px;
-    width: 5px;
+    /* top: 5px; */
+    height: 2rem;
+    width: 2rem;
+    background: #000;
     border-radius: 50%;
-    position: absolute;
-    background: #000;
-}
-
-.easing-container .Y {
-    bottom: -2px;
-    left: -10px;
-}
-
-.easing-container .X {
-    bottom: calc(-10px);
-    left: -2px;
-    background: #000;
-}
-
-.easing-container .XY {
-    bottom: -2px;
-    left: -2px;
-}
-
-h2 {
-    position: absolute;
-    bottom: -30px;
 }
