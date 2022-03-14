@@ -1,18 +1,5 @@
 const ease = N.Select.el('.easing-container');
-
-let yCont = [];
-
-
-const n = 19;
-for (let i = 0; i < n; i++) {
-    yCont.push(ease[i].querySelector('.circle'));
-}
-
-
-let t = 0;
-let y = 0;
-
-let Ease = [
+const Ease = [
     t => 1 - Math.cos(t * (.5 * Math.PI)),
     t => t * t,
     t => t * t * t,
@@ -33,6 +20,19 @@ let Ease = [
     t => 0 === t ? 0 : 1 === t ? 1 : (t /= .5) < 1 ? .5 * 2 ** (10 * (t - 1)) : .5 * (2 - 2 ** (-10 * --t))
 
 ]
+let yCont = [];
+
+const n = Ease.length;
+
+for (let i = 0; i < n; i++) {
+    yCont.push(ease[i].querySelector('.circle'));
+}
+
+
+let t = 0;
+let y = 0;
+
+
 
 setInterval(() => {
 
